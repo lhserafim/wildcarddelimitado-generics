@@ -22,7 +22,7 @@ public class Program {
     }
 
     //public static double totalArea(List<Shape> list) {
-    //para poder usar a função totalArea para Circle e Shape, necessário
+    //para poder usar a função totalArea para Circle e Shape, necessário. Virou uma lista de qualquer tipo
     public static double totalArea(List<? extends Shape> list) {
         double sum = 0.0;
         for (Shape s : list) {
