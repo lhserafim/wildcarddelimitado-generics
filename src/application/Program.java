@@ -1,6 +1,9 @@
 package application;
 
-import java.awt.*;
+import entities.Circle;
+import entities.Rectangle;
+import entities.Shape;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +16,7 @@ public class Program {
         System.out.println("Total area: " + totalArea(myShapes));
     }
 
-    public static void totalArea(List<Shape> list) {
+    public static double totalArea(List<Shape> list) {
         double sum = 0.0;
         for (Shape s : list) {
             sum += s.area();
